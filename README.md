@@ -1,6 +1,6 @@
 # Octopress Theme, VC version ![MIT License](http://img.shields.io/badge/license-MIT-blue.svg)
 
-![release](http://img.shields.io/github/release/vc7/classic-light-vc.svg)
+This theme is for my swift notes blog - [http://swift.kumaya.co](http://swift.kumaya.co)
 
 ## Font
 
