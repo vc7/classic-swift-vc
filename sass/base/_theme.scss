@@ -9,24 +9,24 @@ $link-color-active: adjust-color($link-color-hover, $lightness: -15) !default;
 
 // Main Section Colors
 $main-bg: #f8f8f8 !default;
-$page-bg: #f8f8f8 !default;
+$page-bg: #343433 !default;
 $article-border: #eeeeee !default;
 
-$header-bg: #f1f1f1 !default;
+$header-bg: #f26330 !default;
 $header-border: lighten($header-bg, 15) !default;
-$title-color: #333 !default;
-$subtitle-color: #666 !default;
+$title-color: #fffeff !default;
+$subtitle-color: #efefef !default;
 
 $text-color: #333 !default;
 $text-color-light: #aaa !default;
 $type-border: #ddd !default;
 
 /* Navigation */
-$nav-bg: #ddd !default;
+$nav-bg: #343432 !default;
 $nav-bg-front: image-url('noise.png') !default;
 $nav-bg-back: linear-gradient(lighten($nav-bg, 4), $nav-bg, darken($nav-bg, 8)) !default;
-$nav-color: darken($nav-bg, 38) !default;
-$nav-color-hover: darken($nav-color, 25) !default;
+$nav-color: invert(darken($nav-bg, 10)) !default;
+$nav-color-hover: lighten($nav-color, 25) !default;
 $nav-placeholder: desaturate(darken($nav-bg, 10), 15) !default;
 $nav-border: darken($nav-bg, 10) !default;
 $nav-border-top: lighten($nav-bg, 3) !default;
