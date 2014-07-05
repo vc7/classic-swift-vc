@@ -2,4 +2,13 @@
 <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
 <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
 <meta property="og:url" content="{{ canonical }}" />
-<meta property="og:image" content="{% if page.hero %}{{ page.hero }}{% else %}https://farm3.staticflickr.com/2809/13693634213_2bf182f06e_o.png{% endif %}" />
+{% if site.hero %}
+	<meta property="og:image" content="{{ site.hero }}"/>
+{% endif %}
+{% if page.hero %}
+	<meta property="og:image" content="{{ page.hero }}"/>
+{% endif %}
+{% if page.title %}
+	<meta property="article:author" content="{{ site.author | strip_html }}"/>
+{% endif %}
+
