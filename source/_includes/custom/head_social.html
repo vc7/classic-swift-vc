@@ -1,4 +1,4 @@
-<!-- Facebook OG tags -->
+<!-- OG tags -->
 <meta property="og:title" content="{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}" />
 <meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
 <meta property="og:url" content="{{ canonical }}" />
@@ -8,7 +8,11 @@
 {% if page.hero %}
 	<meta property="og:image" content="{{ page.hero }}"/>
 {% endif %}
-{% if page.title %}
-	<meta property="article:author" content="{{ site.author | strip_html }}"/>
-{% endif %}
 
+<!-- Facebook tags -->
+{% if site.fb_admins %}
+	<meta property="fb:admins" content="{{ site.fb_admins }}"/>
+{% endif %}
+{% if site.fb_app_id %}
+	<meta property="fb:app_id" content="{{ site.fb_app_id }}"/>
+{% endif %}
